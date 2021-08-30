@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		265D3AF826DB0FA60061468F /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D3AF726DB0FA60061468F /* Apod.swift */; };
+		265D3AFA26DB11CD0061468F /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D3AF926DB11CD0061468F /* ServerResponse.swift */; };
+		265D3AFD26DB12A90061468F /* IServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D3AFC26DB12A90061468F /* IServerResponse.swift */; };
+		265D3B0026DB1A470061468F /* CellNasaApod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D3AFE26DB1A470061468F /* CellNasaApod.swift */; };
+		265D3B0126DB1A470061468F /* CellNasaApod.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265D3AFF26DB1A470061468F /* CellNasaApod.xib */; };
+		265D3B0626DB32BF0061468F /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D3B0526DB32BF0061468F /* DetailController.swift */; };
+		26D392FD26D9C16A00874586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D392FC26D9C16A00874586 /* AppDelegate.swift */; };
+		26D392FF26D9C16A00874586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D392FE26D9C16A00874586 /* SceneDelegate.swift */; };
+		26D3930126D9C16A00874586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D3930026D9C16A00874586 /* ViewController.swift */; };
+		26D3930426D9C16A00874586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D3930226D9C16A00874586 /* Main.storyboard */; };
+		26D3930626D9C16C00874586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D3930526D9C16C00874586 /* Assets.xcassets */; };
+		26D3930926D9C16C00874586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D3930726D9C16C00874586 /* LaunchScreen.storyboard */; };
+		26D3931426D9C16C00874586 /* SoyYoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D3931326D9C16C00874586 /* SoyYoTests.swift */; };
+		26D3931F26D9C16C00874586 /* SoyYoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D3931E26D9C16C00874586 /* SoyYoUITests.swift */; };
+		26D3933126D9C50500874586 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D3933026D9C50500874586 /* NetworkManager.swift */; };
+		26D3933426D9C60200874586 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D3933326D9C60200874586 /* Constantes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26D3931026D9C16C00874586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26D392F126D9C16A00874586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26D392F826D9C16A00874586;
+			remoteInfo = SoyYo;
+		};
+		26D3931B26D9C16C00874586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26D392F126D9C16A00874586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26D392F826D9C16A00874586;
+			remoteInfo = SoyYo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		265D3AF726DB0FA60061468F /* Apod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
+		265D3AF926DB11CD0061468F /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		265D3AFC26DB12A90061468F /* IServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IServerResponse.swift; sourceTree = "<group>"; };
+		265D3AFE26DB1A470061468F /* CellNasaApod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNasaApod.swift; sourceTree = "<group>"; };
+		265D3AFF26DB1A470061468F /* CellNasaApod.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellNasaApod.xib; sourceTree = "<group>"; };
+		265D3B0526DB32BF0061468F /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		26D392F926D9C16A00874586 /* SoyYo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoyYo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D392FC26D9C16A00874586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26D392FE26D9C16A00874586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		26D3930026D9C16A00874586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26D3930326D9C16A00874586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26D3930526D9C16C00874586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26D3930826D9C16C00874586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26D3930A26D9C16C00874586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D3930F26D9C16C00874586 /* SoyYoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoyYoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D3931326D9C16C00874586 /* SoyYoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyYoTests.swift; sourceTree = "<group>"; };
+		26D3931526D9C16C00874586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D3931A26D9C16C00874586 /* SoyYoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoyYoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D3931E26D9C16C00874586 /* SoyYoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyYoUITests.swift; sourceTree = "<group>"; };
+		26D3932026D9C16C00874586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D3933026D9C50500874586 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		26D3933326D9C60200874586 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26D392F626D9C16A00874586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3930C26D9C16C00874586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3931726D9C16C00874586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		265D3AFB26DB12590061468F /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				265D3AFC26DB12A90061468F /* IServerResponse.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		26D392F026D9C16A00874586 = {
+			isa = PBXGroup;
+			children = (
+				26D392FB26D9C16A00874586 /* SoyYo */,
+				26D3931226D9C16C00874586 /* SoyYoTests */,
+				26D3931D26D9C16C00874586 /* SoyYoUITests */,
+				26D392FA26D9C16A00874586 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26D392FA26D9C16A00874586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26D392F926D9C16A00874586 /* SoyYo.app */,
+				26D3930F26D9C16C00874586 /* SoyYoTests.xctest */,
+				26D3931A26D9C16C00874586 /* SoyYoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26D392FB26D9C16A00874586 /* SoyYo */ = {
+			isa = PBXGroup;
+			children = (
+				265D3AFB26DB12590061468F /* Interfaces */,
+				26D3932F26D9C3F900874586 /* BLL */,
+				26D3932E26D9C3EE00874586 /* Views */,
+				26D3932D26D9C3E700874586 /* Controllers */,
+				26D3932C26D9C3E000874586 /* Model */,
+				26D392FC26D9C16A00874586 /* AppDelegate.swift */,
+				26D392FE26D9C16A00874586 /* SceneDelegate.swift */,
+				26D3930526D9C16C00874586 /* Assets.xcassets */,
+				26D3930A26D9C16C00874586 /* Info.plist */,
+			);
+			path = SoyYo;
+			sourceTree = "<group>";
+		};
+		26D3931226D9C16C00874586 /* SoyYoTests */ = {
+			isa = PBXGroup;
+			children = (
+				26D3931326D9C16C00874586 /* SoyYoTests.swift */,
+				26D3931526D9C16C00874586 /* Info.plist */,
+			);
+			path = SoyYoTests;
+			sourceTree = "<group>";
+		};
+		26D3931D26D9C16C00874586 /* SoyYoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26D3931E26D9C16C00874586 /* SoyYoUITests.swift */,
+				26D3932026D9C16C00874586 /* Info.plist */,
+			);
+			path = SoyYoUITests;
+			sourceTree = "<group>";
+		};
+		26D3932C26D9C3E000874586 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				265D3AF726DB0FA60061468F /* Apod.swift */,
+				265D3AF926DB11CD0061468F /* ServerResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26D3932D26D9C3E700874586 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26D3930026D9C16A00874586 /* ViewController.swift */,
+				265D3B0526DB32BF0061468F /* DetailController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		26D3932E26D9C3EE00874586 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26D3930726D9C16C00874586 /* LaunchScreen.storyboard */,
+				26D3930226D9C16A00874586 /* Main.storyboard */,
+				265D3AFE26DB1A470061468F /* CellNasaApod.swift */,
+				265D3AFF26DB1A470061468F /* CellNasaApod.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26D3932F26D9C3F900874586 /* BLL */ = {
+			isa = PBXGroup;
+			children = (
+				26D3933026D9C50500874586 /* NetworkManager.swift */,
+				26D3933326D9C60200874586 /* Constantes.swift */,
+			);
+			path = BLL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26D392F826D9C16A00874586 /* SoyYo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D3932326D9C16C00874586 /* Build configuration list for PBXNativeTarget "SoyYo" */;
+			buildPhases = (
+				26D392F526D9C16A00874586 /* Sources */,
+				26D392F626D9C16A00874586 /* Frameworks */,
+				26D392F726D9C16A00874586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoyYo;
+			productName = SoyYo;
+			productReference = 26D392F926D9C16A00874586 /* SoyYo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26D3930E26D9C16C00874586 /* SoyYoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D3932626D9C16C00874586 /* Build configuration list for PBXNativeTarget "SoyYoTests" */;
+			buildPhases = (
+				26D3930B26D9C16C00874586 /* Sources */,
+				26D3930C26D9C16C00874586 /* Frameworks */,
+				26D3930D26D9C16C00874586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26D3931126D9C16C00874586 /* PBXTargetDependency */,
+			);
+			name = SoyYoTests;
+			productName = SoyYoTests;
+			productReference = 26D3930F26D9C16C00874586 /* SoyYoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26D3931926D9C16C00874586 /* SoyYoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D3932926D9C16C00874586 /* Build configuration list for PBXNativeTarget "SoyYoUITests" */;
+			buildPhases = (
+				26D3931626D9C16C00874586 /* Sources */,
+				26D3931726D9C16C00874586 /* Frameworks */,
+				26D3931826D9C16C00874586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26D3931C26D9C16C00874586 /* PBXTargetDependency */,
+			);
+			name = SoyYoUITests;
+			productName = SoyYoUITests;
+			productReference = 26D3931A26D9C16C00874586 /* SoyYoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26D392F126D9C16A00874586 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Oscar Julian Gil Bernal";
+				TargetAttributes = {
+					26D392F826D9C16A00874586 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					26D3930E26D9C16C00874586 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 26D392F826D9C16A00874586;
+					};
+					26D3931926D9C16C00874586 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 26D392F826D9C16A00874586;
+					};
+				};
+			};
+			buildConfigurationList = 26D392F426D9C16A00874586 /* Build configuration list for PBXProject "SoyYo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26D392F026D9C16A00874586;
+			productRefGroup = 26D392FA26D9C16A00874586 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26D392F826D9C16A00874586 /* SoyYo */,
+				26D3930E26D9C16C00874586 /* SoyYoTests */,
+				26D3931926D9C16C00874586 /* SoyYoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26D392F726D9C16A00874586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265D3B0126DB1A470061468F /* CellNasaApod.xib in Resources */,
+				26D3930926D9C16C00874586 /* LaunchScreen.storyboard in Resources */,
+				26D3930626D9C16C00874586 /* Assets.xcassets in Resources */,
+				26D3930426D9C16A00874586 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3930D26D9C16C00874586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3931826D9C16C00874586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26D392F526D9C16A00874586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D3933426D9C60200874586 /* Constantes.swift in Sources */,
+				26D3933126D9C50500874586 /* NetworkManager.swift in Sources */,
+				26D3930126D9C16A00874586 /* ViewController.swift in Sources */,
+				265D3AF826DB0FA60061468F /* Apod.swift in Sources */,
+				265D3AFA26DB11CD0061468F /* ServerResponse.swift in Sources */,
+				26D392FD26D9C16A00874586 /* AppDelegate.swift in Sources */,
+				265D3B0026DB1A470061468F /* CellNasaApod.swift in Sources */,
+				26D392FF26D9C16A00874586 /* SceneDelegate.swift in Sources */,
+				265D3B0626DB32BF0061468F /* DetailController.swift in Sources */,
+				265D3AFD26DB12A90061468F /* IServerResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3930B26D9C16C00874586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D3931426D9C16C00874586 /* SoyYoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3931626D9C16C00874586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D3931F26D9C16C00874586 /* SoyYoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26D3931126D9C16C00874586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26D392F826D9C16A00874586 /* SoyYo */;
+			targetProxy = 26D3931026D9C16C00874586 /* PBXContainerItemProxy */;
+		};
+		26D3931C26D9C16C00874586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26D392F826D9C16A00874586 /* SoyYo */;
+			targetProxy = 26D3931B26D9C16C00874586 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26D3930226D9C16A00874586 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26D3930326D9C16A00874586 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26D3930726D9C16C00874586 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26D3930826D9C16C00874586 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26D3932126D9C16C00874586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26D3932226D9C16C00874586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26D3932426D9C16C00874586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCR4N5G3SH;
+				INFOPLIST_FILE = SoyYo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OscarJulianGil.SoyYo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26D3932526D9C16C00874586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCR4N5G3SH;
+				INFOPLIST_FILE = SoyYo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OscarJulianGil.SoyYo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26D3932726D9C16C00874586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCR4N5G3SH;
+				INFOPLIST_FILE = SoyYoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OscarJulianGil.SoyYoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoyYo.app/SoyYo";
+			};
+			name = Debug;
+		};
+		26D3932826D9C16C00874586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCR4N5G3SH;
+				INFOPLIST_FILE = SoyYoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OscarJulianGil.SoyYoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoyYo.app/SoyYo";
+			};
+			name = Release;
+		};
+		26D3932A26D9C16C00874586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCR4N5G3SH;
+				INFOPLIST_FILE = SoyYoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OscarJulianGil.SoyYoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoyYo;
+			};
+			name = Debug;
+		};
+		26D3932B26D9C16C00874586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCR4N5G3SH;
+				INFOPLIST_FILE = SoyYoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OscarJulianGil.SoyYoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoyYo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26D392F426D9C16A00874586 /* Build configuration list for PBXProject "SoyYo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D3932126D9C16C00874586 /* Debug */,
+				26D3932226D9C16C00874586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D3932326D9C16C00874586 /* Build configuration list for PBXNativeTarget "SoyYo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D3932426D9C16C00874586 /* Debug */,
+				26D3932526D9C16C00874586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D3932626D9C16C00874586 /* Build configuration list for PBXNativeTarget "SoyYoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D3932726D9C16C00874586 /* Debug */,
+				26D3932826D9C16C00874586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D3932926D9C16C00874586 /* Build configuration list for PBXNativeTarget "SoyYoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D3932A26D9C16C00874586 /* Debug */,
+				26D3932B26D9C16C00874586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26D392F126D9C16A00874586 /* Project object */;
+}
